@@ -1,0 +1,121 @@
+<!--
+    %: cross-platform mobalization
+    border: adds to the px/size of the elements
+    padding: space b/n edge and text, adds to size of box
+    margin: buffere zone b/n dif elements/boxes
+
+
+    .red-div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: solid 20px;
+    margin-left: 260px;
+    }
+
+    block elements
+    - <p>
+    - <h1>, <h6>
+    - <div>
+    - <ol>, <ul>, <li>
+    - <form>
+
+    text-decoration: underline;
+
+    <span> </span>: you can single out and change a part
+
+    inline
+    - <span>
+    -  <img>
+    - <a>
+
+    p {
+        display: inline;
+        - cannot change width
+    }
+
+    span {
+        display: block;
+        - can change width
+    }
+
+    display: inline-block;
+    - can change width and let's you sit things on the same line
+
+    display: none;
+    - gets rid of element from website, doesn't exist anymore
+    - can hide quiz questions
+
+    visibility: hidden;
+    - makes the element disapear, but keeps its position
+    - as if still there, but hidden
+    - still in the box flow of other elements
+
+    get rid of extra space
+    - inspect to see the margins in each section
+    - body, h1, etc.
+-->
+
+<!--
+    postions:
+    
+     static
+        - default
+     relative
+        - positioning an element RELATIVE to its static position
+        - right 30px === left 30px
+     absolute
+        - positioning an element RELATIVE TO PARENT
+        - right 30px === 30px right from body edge
+        - affects flow of other elements, as if it's not there
+     fixed
+        - element stays in current position when user scrolls
+        - ex. pos: fixed; and top: 0; 
+            - element stays fixed to the top
+        - good for navigation or side bar
+-->
+
+<!--
+    centering
+
+     text-align: center;
+    
+     margin: 0 auto 0 auto;
+     margin: 0 auto;
+     - horizontally centered
+-->
+
+<!--
+    fonts
+    - font1, font2, font3
+    - falls back on next font if OS can't render a font
+    - web-safe fonts: max chance of every laptop having it
+    - CSS Font Stack .com
+    - most people have Arial installed, but not 100%
+    - can embed Google Fonts into websites
+-->
+
+<!--
+    size
+    - 100% = 16px = 1em
+    - to get 90px then 90/16 === ---%
+    - % and em better for accessibility
+    - static(px) vs dynamic (%, em)
+    - (em & %)fontsize gets inheritated and added to whatever additional changes to size
+    - ex. body+h1 font size
+    - rem ==== not inheritated, ignores all parent sizes
+    - use rem when sizing text
+
+
+    float
+    - float: left/right/etc;
+    - let's u put an element next to an element
+    - photo next to text
+    - used to wrap text around a certain element
+    - dont use too often
+
+    clear
+    - clear: left/right/etc;
+    - let's you clear an area to a direction of an element
+    - clearing area left to text, which is a picture, moves text to another line
+-->
